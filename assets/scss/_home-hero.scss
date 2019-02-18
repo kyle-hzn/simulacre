@@ -1,3 +1,13 @@
-body{
-    background-image: linear-gradient(-90deg, #0F0F10 21%, #161618 100%);
+.home-hero{
+    &__wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }

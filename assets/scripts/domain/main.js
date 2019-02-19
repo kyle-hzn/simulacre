@@ -1,19 +1,13 @@
-console.log("working yeah");
+const buttonContent = document.querySelector(".content-button");
 const menuBurger = document.querySelector(".burger");
 const sideMenu = document.querySelector(".side-menu");
-const anchors = document.querySelectorAll(".title-menu");
 
-anchors.forEach((anchor) => {
-  anchor.addEventListener("click", () => {
-    toggleSlider();
-  });
-});
-
-menuBurger.addEventListener("click", () => {
+buttonContent.addEventListener("click", () => {
   toggleSlider();
 });
 
 const toggleSlider = () => {
+  buttonContent.classList.toggle("darkMode");
   menuBurger.classList.toggle("burgeractive");
   sideMenu.classList.toggle("active");
 };

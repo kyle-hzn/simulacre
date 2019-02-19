@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <title>Simulacre</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
-  <link rel="stylesheet" href="../dist/css/style.css" />
-  <title>Simulacre</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="home-hero">
-      <div class="home-hero__wrapper mb-200">
-        <div class="home-hero__head mt-20">
-          <div class="content-button">
-            <div class="burger">
-              <i></i>
+  <body>
+    <div class="container">
+      <div class="home-hero" id="accueil">
+        <div class="home-hero__wrapper mb-200">
+          <div class="home-hero__head mt-20">
+            <div class="content-button">
+              <div class="burger">
+                <i></i>
+              </div>
+            </div>
+            <img src="../assets/images/logo.svg" alt="logo-simulacre" />
+            <div class="home-hero__socials">
+              <img
+                class="home-hero__icons"
+                src="../assets/images/facebook.svg"
+                alt="facebook"
+              />
+              <img
+                class="home-hero__icons"
+                src="../assets/images/instagram.svg"
+                alt="instagram"
+              />
+              <img
+                class="home-hero__icons"
+                src="../assets/images/Vimeo.svg"
+                alt="vimeo"
+              />
             </div>
           </div>
-          <img src="../assets/images/logo.svg" alt="logo-simulacre" />
-          <div class="home-hero__socials">
-            <img class="home-hero__icons" src="../assets/images/facebook.svg" alt="facebook" />
-            <img class="home-hero__icons" src="../assets/images/instagram.svg" alt="instagram" />
-            <img class="home-hero__icons" src="../assets/images/Vimeo.svg" alt="vimeo" />
-          </div>
-        </div>
-        <div class="home-hero__body">
-          <div class="home-hero__body__l">
+          <div class="home-hero__body">
+            <div class="home-hero__body__l">
               <h2 class="subtitle subtitle--white mb-10">
-                  SIMULACRE LE FILM
+                SIMULACRE LE FILM
               </h2>
               <h1 class="title title--white mb-10">
-                Entrez dans le monde <strong class="title title--red title--strong">mystérieux</strong> de <strong class="title title--red title--strong">Simulacre</strong> <br> et finissez impérativement le jeu.
+                Entrez dans le monde
+                <strong class="title title--red title--strong"
+                  >mystérieux</strong
+                >
+                de
+                <strong class="title title--red title--strong"
+                  >Simulacre</strong
+                >
+                <br />
+                et finissez impérativement le jeu.
               </h1>
               <p class="txt txt--white home-hero__intro">
-                Entrez dans le monde mystérieux de Simulacre et finissez <br> impérativement le jeu.
+                Entrez dans le monde mystérieux de Simulacre et finissez <br />
+                impérativement le jeu.
               </p>
-          </div>
-          <div class="home-hero__body__r">
+            </div>
+            <div class="home-hero__body__r">
               <div id="container">
-                  <div id="inner">
-                      <div class="demo-overlay">
-                          <img src="../assets/images/masque.png" alt="mask">
-                      </div>
+                <div id="inner">
+                  <div class="demo-overlay">
+                    <img src="../assets/images/masque.png" alt="mask" />
                   </div>
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-        <div class="home-hero__footer mb-20">
-          <img src="../assets/images/logo-hetic.png" alt="hetic">
-          <img class="logo-prod" src="../assets/images/logo-prod.png" alt="logo production">
+          <div class="home-hero__footer mb-20">
+            <img src="../assets/images/logo-hetic.png" alt="hetic" />
+            <img
+              class="logo-prod"
+              src="../assets/images/logo-prod.png"
+              alt="logo production"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="home-trailer">
-      <div class="home-trailer__wrapper txt-center">
+      <div class="home-trailer" id="trailer">
+        <div class="home-trailer__wrapper txt-center">
           <h2 class="subtitle subtitle--white mb-10">
-              LE TRAILER
+            LE TRAILER
           </h2>
           <h1 class="title title--white mb-10">
-              Préparez vous à vivre <strong class="title title--red title--strong">l’inpensable</strong>.
+            Préparez vous à vivre
+            <strong class="title title--red title--strong">l’inpensable</strong
+            >.
           </h1>
           <p class="txt twt--white mb-20">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco
           </p>
           <div class="home-trailer__video mb-200">
-              <video id='my-video' class='video-js' controls preload='auto' width='100%' height='475'
-                poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
-                  <source src='../assets/images/trailer.mp4' type='video/mp4'>
-                  <source src='MY_VIDEO.webm' type='video/webm'>
-                  <p class='vjs-no-js'>
-                    To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-                  </p>
-              </video>
+            <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="100%"
+              height="475"
+              poster="MY_VIDEO_POSTER.jpg"
+              data-setup="{}"
+            >
+              <source src="../assets/images/trailer.mp4" type="video/mp4" />
+              <source src="MY_VIDEO.webm" type="video/webm" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
           </div>
-      </div>
-    </div>
-    <div class="home-history mb-200">
-      <div class="home-history__wrapper">
-        <div class="home-history__left">
-          <div class="home-history__img1"></div>
-          <div class="home-history__img2"></div>
         </div>
-        <div class="home-history__right">
+      </div>
+      <div class="home-history mb-200" id="histoire">
+        <div class="home-history__wrapper">
+          <div class="home-history__left">
+            <div class="home-history__img1"></div>
+            <div class="home-history__img2"></div>
+          </div>
+          <div class="home-history__right">
             <h2 class="subtitle subtitle--white mb-10">
-                L'HISTOIRE
+              L'HISTOIRE
             </h2>
             <p class="title title--white mb-10">
-                Jouer comporte des <strong class="title title--red title--strong">risques</strong> ...
+              Jouer comporte des
+              <strong class="title title--red title--strong">risques</strong>
+              ...
             </p>
             <p class="txt twt--white mb-20">
-                Samedi, une dizaine d’amis fêtent la pendaison de crémaillère de Bruno. <br>
-                En fin de soirée, l’un d’eux trouve un jeu de société empoussiéré dans le grenier et qui semble avoir été dans ce même grenier depuis très longtemps. <br>
-                Les quatre amis plutôt curieux font le choix de se lancer dans une partie qu’ils vont très vite regretter. <br>
-                Au fil de la partie un hasard les étonne : leurs amis se déplacent dans la maison en même temps que leurs pions sur le plateau. Simple coïncidence ou réelle anomalie ? <br>
-                Jusqu’où le le jeu paranormal prendra-t-il le contrôle de la soirée ?
+              Samedi, une dizaine d’amis fêtent la pendaison de crémaillère de
+              Bruno. <br />
+              En fin de soirée, l’un d’eux trouve un jeu de société empoussiéré
+              dans le grenier et qui semble avoir été dans ce même grenier
+              depuis très longtemps. <br />
+              Les quatre amis plutôt curieux font le choix de se lancer dans une
+              partie qu’ils vont très vite regretter. <br />
+              Au fil de la partie un hasard les étonne : leurs amis se déplacent
+              dans la maison en même temps que leurs pions sur le plateau.
+              Simple coïncidence ou réelle anomalie ? <br />
+              Jusqu’où le le jeu paranormal prendra-t-il le contrôle de la
+              soirée ?
             </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="side-menu">
-    <div class="content-menu">
-      <a data-scroll href="#acceuil" class="title-menu">Acceuil</a>
-      <a data-scroll href="#histoire" href="#" class="title-menu">Histoire</a>
-      <a data-scroll href="#trailer" href="#" class="title-menu">Trailer</a>
+    <div class="side-menu">
+      <div class="content-menu">
+        <a data-value="accueil" href="#" class="title-menu">Accueil</a>
+        <a data-value="trailer" href="#" class="title-menu">Trailer</a>
+        <a data-value="histoire" href="#" class="title-menu">Histoire</a>
+      </div>
     </div>
-  </div>
-  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="../dist/scripts/scripts.min.js"></script>
-</body>
-
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../dist/scripts/scripts.min.js"></script>
+  </body>
 </html>

@@ -54,6 +54,13 @@ gulp.task("vendorScripts", function() {
     .pipe(gulp.dest(jsOutput));
 });
 
+gulp.task("html", function() {
+  return gulp
+    .src("./app/index.html")
+    .pipe(concat("index.html"))
+    .pipe(gulp.dest("dist/"));
+});
+
 // gulp.task('browserSync', function() {
 //     browserSync.init({
 //         server: {
@@ -69,4 +76,4 @@ gulp.task("watch", ["sass", "domainScripts", "vendorScripts"], function() {
   gulp.watch("assets/scripts/vendor/**/*.js", ["vendorScripts"]);
 });
 
-gulp.task("build", ["sass", "domainScripts", "vendorScripts"]);
+gulp.task("build", ["sass", "domainScripts", "vendorScripts", "html"]);

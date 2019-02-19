@@ -60,6 +60,9 @@ $white2: #D4D4D4;
   }
   &-200{
     margin-bottom: 200px;
+    @include breakpoint(small){
+      margin-bottom: 100px;
+    }
   }
 }
 .mt{

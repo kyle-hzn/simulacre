@@ -14,6 +14,21 @@
       height: 100%;
       opacity: 0.1;
       z-index: -1;
+      @include breakpoint(small){
+        display: none;
+      }
+    }
+  }
+  &__logo{
+    @include breakpoint(small){
+      width: 40%;
+    }
+  }
+  &__socials{
+    align-items: center;
+    display: flex;
+    @include breakpoint(small){
+      display: none;
     }
   }
   &__head {
@@ -44,6 +59,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include breakpoint(small){
+      flex-direction: column;
+    }
+    &__r{
+      img{
+        @include breakpoint(small){
+          width: 40%;
+          margin-top: 100px;
+        } 
+      }
+    }
   }
   &__footer {
     display: flex;
@@ -57,12 +83,12 @@
 
 #container {
   perspective: 30px;
+  text-align: center;
 }
 
 #inner {
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
-  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
 }
 
 .content-button {

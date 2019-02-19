@@ -85,25 +85,11 @@ body {
     padding-left: 15px;
   }
 }
-.viewport {
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  overflow: hidden;
-  z-index: 10;
 }
 @media (min-width: 768px) {
   .container {

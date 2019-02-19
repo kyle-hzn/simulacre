@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../dist/css/style.css" />
-    <title>Simulacre</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/css/style.css" />
+  <title>Simulacre</title>
+</head>
+
+<body>
+  <div class="viewport">
     <div class="container">
       <div class="home-hero" id="accueil">
         <div class="home-hero__wrapper mb-200">
@@ -21,21 +23,9 @@
             </div>
             <img class="home-hero__logo" src="../assets/images/logo.svg" alt="logo-simulacre" />
             <div class="home-hero__socials">
-              <img
-                class="home-hero__icons"
-                src="../assets/images/facebook.svg"
-                alt="facebook"
-              />
-              <img
-                class="home-hero__icons"
-                src="../assets/images/instagram.svg"
-                alt="instagram"
-              />
-              <img
-                class="home-hero__icons"
-                src="../assets/images/Vimeo.svg"
-                alt="vimeo"
-              />
+              <img class="home-hero__icons" src="../assets/images/facebook.svg" alt="facebook" />
+              <img class="home-hero__icons" src="../assets/images/instagram.svg" alt="instagram" />
+              <img class="home-hero__icons" src="../assets/images/Vimeo.svg" alt="vimeo" />
             </div>
           </div>
           <div class="home-hero__body">
@@ -45,13 +35,9 @@
               </h2>
               <h1 class="title title--white mb-10">
                 Entrez dans le monde
-                <strong class="title title--red title--strong"
-                  >mystérieux</strong
-                >
+                <strong class="title title--red title--strong">mystérieux</strong>
                 de
-                <strong class="title title--red title--strong"
-                  >Simulacre</strong
-                >
+                <strong class="title title--red title--strong">Simulacre</strong>
                 <br />
                 et finissez impérativement le jeu.
               </h1>
@@ -72,11 +58,7 @@
           </div>
           <div class="home-hero__footer mb-20">
             <img src="../assets/images/logo-hetic.png" alt="hetic" />
-            <img
-              class="logo-prod"
-              src="../assets/images/logo-prod.png"
-              alt="logo production"
-            />
+            <img class="logo-prod" src="../assets/images/logo-prod.png" alt="logo production" />
           </div>
         </div>
       </div>
@@ -87,8 +69,7 @@
           </h2>
           <h1 class="title title--white mb-10">
             Préparez vous à vivre
-            <strong class="title title--red title--strong">l’inpensable</strong
-            >.
+            <strong class="title title--red title--strong">l’inpensable</strong>.
           </h1>
           <p class="txt twt--white mb-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -96,26 +77,14 @@
             ad minim veniam, quis nostrud exercitation ullamco
           </p>
           <div class="home-trailer__video mb-200">
-            <video
-              id="my-video"
-              class="video-js"
-              controls
-              preload="auto"
-              width="100%"
-              height="475"
-              poster="MY_VIDEO_POSTER.jpg"
-              data-setup="{}"
-            >
+            <video id="my-video" class="video-js" controls preload="auto" width="100%" height="475" poster="MY_VIDEO_POSTER.jpg"
+              data-setup="{}">
               <source src="../assets/images/trailer.mp4" type="video/mp4" />
               <source src="MY_VIDEO.webm" type="video/webm" />
               <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider
                 upgrading to a web browser that
-                <a
-                  href="https://videojs.com/html5-video-support/"
-                  target="_blank"
-                  >supports HTML5 video</a
-                >
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
               </p>
             </video>
           </div>
@@ -154,15 +123,18 @@
         </div>
       </div>
     </div>
-    <div class="side-menu">
-      <div class="content-menu">
-        <a data-value="accueil" href="#" class="title-menu">Accueil</a>
-        <a data-value="trailer" href="#" class="title-menu">Trailer</a>
-        <a data-value="histoire" href="#" class="title-menu">Histoire</a>
-      </div>
+  </div>
+  <div class="side-menu">
+    <div class="content-menu">
+      <a data-value="accueil" href="#" class="title-menu">Accueil</a>
+      <a data-value="trailer" href="#" class="title-menu">Trailer</a>
+      <a data-value="histoire" href="#" class="title-menu">Histoire</a>
     </div>
-    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="../dist/scripts/scripts.min.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="../dist/scripts/scripts.min.js"></script>
+</body>
+
 </html>

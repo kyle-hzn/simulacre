@@ -61,7 +61,7 @@
     };
   
     var updateTransformStyle = function(x, y) {
-      var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+      var style = "rotateX(" + x + "100deg) rotateY(" + y + "100deg)";
       inner.style.transform = style;
       inner.style.webkitTransform = style;
       inner.style.mozTranform = style;
